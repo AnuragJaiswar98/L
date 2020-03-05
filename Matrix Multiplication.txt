@@ -1,0 +1,20 @@
+import numpy as n
+a=n.array([0,4,6])
+b=n.array([[1,2],[4,9],[-1,-10]])
+print(n.dot(a,b))
+
+
+b. Find the matrix-matrix product of M with a c by p matrix N.
+Source code:
+x=[[3,2,2],[4,1,5],[7,2,7]]
+y=[[5,3,1],[1,7,3],[2,5,2]]
+m=[[0,0,0],[0,0,0],[0,0,0]]
+print('Multiplication of 2 matrix is:')
+for i in range(len(x)):
+for j in range(len(y[0])):
+for k in range(len(y)):
+m[i][j]+=x[i][k]*y[k][j]
+for r in m:
+print(r)
+
+

@@ -1,0 +1,17 @@
+Aim: Write a program to do the following:
+(a) Enter a positive number N and find numbers a and b such that a2– b2= N
+Source code:
+n=36
+a=9
+b=4
+print('The value of positive number N is:',n)
+print('Factors of N are:',a,b)
+x=(a+b)/2
+y=(a-b)/2
+print(x)
+print(y)
+p=x*x
+q=y*y
+print('The value of square of a and b:',p,q)
+n=p-q
+print(n)

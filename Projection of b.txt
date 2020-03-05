@@ -1,0 +1,52 @@
+(a) Enter a vector b and find the projection of b orthogonal to a given vector u.
+Source code:
+import numpy as n
+def oprojection(of_vec,on_vec):
+v1=n.array(of_vec)
+v2=n.array(on_vec)
+s=n.dot(v2,v1)/n.dot(v2,v2)
+vec=s*v2
+return round(s,10),n.around(vec,decimals=10)
+print(oprojection([4.0,4.0],[1.0,0.0]))
+print(oprojection([4.0,4.0],[8.0,2.0]))
+
+
+
+
+
+
+(b) Find the projection of b orthogonal to a set of given vectors .
+Source code:
+import numpy as n
+def oprojection(of_vec,on_vec):
+v1=n.array(of_vec)
+v2=n.array(on_vec)
+s=n.dot(v2,v1)/n.dot(v2,v2)
+vec=s*v2
+return round(s,10),n.around(vec,decimals=10)
+v1=[-2.0,-3.0,-2.0]
+v2=[2.0,-4.0,-1.0]
+x=[-4.0,-2.0,1.0]
+def make_unit_vec(u):
+bottom=n.linalg.norm(u)
+return u/bottom
+b1=make_unit_vec([-2.0,-3.0,-2.0])
+print(b1)
+print(oprojection(v2,b1))
+v2_perp=v2-oprojection(v2,b1)[1]
+b2=make_unit_vec(v2_perp)
+print(b2)
+print('Check whether b1 and b2 are orthogonal or not')
+print(n.linalg.norm(b2))
+print(n.dot(b1,b2))
+p1=n.outer(b1,b1)
+print(p1)
+p2=n.outer(b2,b2)
+25
+print(p2)
+p=p1+p2
+print(p)
+t=n.dot(p,x)
+print(t)
+tp=x-t
+print(tp)

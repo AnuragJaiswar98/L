@@ -1,0 +1,7 @@
+d. Find the scalar multiplication of M for a given scalar.
+Source code:
+import numpy as n
+m=n.array([[1,1,2],[2,6,7],[3,6,7]])
+print(m)
+
+

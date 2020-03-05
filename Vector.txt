@@ -1,0 +1,16 @@
+Aim: Write a program to do the following:
+• Enter a vector u as a n-list
+• Enter another vector v as a n-list
+• Find the vector au+bv for different values of a and b
+• Find the dot product of u and v
+Source code:
+import numpy as n
+u=n.array((3,4,5))
+v=n.array((1,2,7))
+print('Vector u=',u)
+print('Vector v=',v)
+print('Enter the value of a and b')
+a=input()
+b=input()
+p=n.dot(u,v)
+print('Dot product of u and v ',p)

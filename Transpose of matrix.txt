@@ -1,0 +1,13 @@
+
+
+e. Find the transpose of the matrix M.
+Source code:
+import numpy as n
+m=n.array([[1,1,2],[2,6,7],[3,6,7]])
+print(m)
+t=n.array([[0,0,0],[0,0,0],[0,0,0]])
+print(t)
+for i in range(len(m)):
+for j in range(len(m[0])):
+t[j][i]=m[i][j]
+print(t)

@@ -1,0 +1,10 @@
+import numpy as n
+a=n.mat('3 -2;1 0')
+print('A:\n',a)
+print('Eigen values:',n.linalg.eigvals(a))
+eigenvalues,eigenvectors=n.linalg.eig(a)
+print('First tuple of eig:',eigenvalues)
+print('Second tuple of eig:',eigenvectors)
+for i in range(len(eigenvalues)):
+print('Left',n.dot(a,eigenvectors[:,1]))
+print(...)

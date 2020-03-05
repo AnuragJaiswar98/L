@@ -1,0 +1,30 @@
+Aim: Write a program to do the following:
+a. Enter an r by c matrix M (r and c being positive integers)
+Source code:
+import numpy as np
+m = np.array([[1,1,2],
+ [2,3,4],
+ [4,5,6,]])
+
+(2)
+Aim: Write a program to do the following:
+a. Enter an r by c matrix M (r and c being positive integers)
+Source code:
+import numpy as np
+m = np.array([[1,1,2],
+ [2,3,4],
+ [4,5,6,]])
+
+
+(3)
+import numpy as n
+m=n.array([[1,1,2],[2,6,7],[3,6,7]])
+print(m)
+p=m[0:1]
+q=m[0:2]
+print(p)
+print(q)
+x=m[:,0:1]
+y=m[:,0:2]
+print(x)
+print(y)

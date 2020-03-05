@@ -1,0 +1,6 @@
+from sympy import Matrix
+A = [[1, 2, 0], [2, 4, 0], [3, 6, 1]]
+A = Matrix(A)
+NullSpace = A.nullspace()
+NullSpace = Matrix(NullSpace)
+print("Null Space : ", NullSpace)

@@ -1,0 +1,6 @@
+import numpy as np
+m = np.matrix([[2, -1, 0],
+ [-1, 2, -1],
+ [0, -1, 2]])
+print("m\n",m)
+print ("eigenvalues",np.linalg.eigvals(m))

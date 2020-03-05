@@ -1,0 +1,13 @@
+Aim: Write a program to enter a matrix and check if it is invertible. If the inverse exists,
+find the inverse.
+Source code:
+import numpy as n
+m=n.array([[1,2,1],[2,1,0],[3,0,2]])
+print('The matrix M is:',m)
+a=n.linalg.det(m)
+print('The determinant of matrix M is:',a)
+if a<=0:
+k=n.linalg.inv(m)
+print('The inverse of matrix M is:',k)
+else:
+print('Matrix is not invertible')
